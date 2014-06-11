@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
+  
+  root 'events#new'
+  
   get 'events/index'
-
   get 'events/search'
-
   get 'events/show'
 
-  get 'events/new'
+  
 
-  get 'index/search'
-
-  get 'index/show'
-
-  get 'index/new'
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
